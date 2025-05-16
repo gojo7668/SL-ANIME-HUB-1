@@ -30,7 +30,7 @@ async function start() {
     }
   });
 
-  rl.question('Enter phone number (with country code): ', (phoneNumber) => {
+  rl.question('Enter phone number (with country code): ', (phoneNumber) => { "+94743826406",
     sock.sendMessage(phoneNumber + '@s.whatsapp.net', { text: 'Hello from Baileys!' })
       .then(() => {
         console.log('Message sent successfully');
